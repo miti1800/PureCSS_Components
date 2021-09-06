@@ -33,3 +33,13 @@ a {
     background-color: #fff;
     color: #6CB4EE;
 }
+
+@media(max-width:500px){
+    .button-div {
+        flex-wrap: wrap;
+    }
+
+    .normal-btn {
+        margin: 10px;
+    }
+}

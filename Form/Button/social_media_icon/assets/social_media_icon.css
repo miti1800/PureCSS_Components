@@ -1,0 +1,93 @@
+a {
+    text-decoration: none;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.button-div a {
+    border-radius: 10px;
+    padding: 10px 10px 6px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    margin: 20px;
+    background-color: #fff;
+}
+
+.button-div a .iconify {
+    font-size: 40px;
+}
+
+.button-div .facebook-icon .iconify {
+    color:  #3b5998;
+}
+
+.button-div .instagram-icon .iconify {
+    color:  #c13584;
+}
+
+.button-div .twitter-icon .iconify {
+    color:   #1da1f2;
+}
+
+.button-div .mail-icon .iconify {
+    color:   #EA4335;
+}
+
+.button-div .youtube-icon .iconify {
+    color:   #ff0000;
+}
+
+.button-div .facebook-icon:hover {
+    background-color: #3b5998;
+}
+
+.button-div .instagram-icon:hover {
+    background-color:  #c13584;
+}
+
+.button-div .twitter-icon:hover {
+    background-color:   #1da1f2;
+}
+
+.button-div .mail-icon:hover {
+    background-color:   #EA4335;
+}
+
+.button-div .youtube-icon:hover {
+    background-color:   #ff0000;
+}
+
+.button-div .facebook-icon:hover .iconify, .button-div .instagram-icon:hover .iconify, .button-div .twitter-icon:hover .iconify, .button-div .mail-icon:hover .iconify, .button-div .youtube-icon:hover .iconify {
+    color:   #fff;
+}
+
+.button-div a {
+    transition: 0.3s linear;
+}
+
+.button-div a:hover {
+    transition: 0.3s linear;
+    transform: rotate(360deg);
+    border-radius: 100%;
+}
+
+.button-div a:hover .iconify {
+    transform: rotate(-360deg);
+}
+
+@media(max-width: 500px) {
+    .button-div {
+        flex-wrap: wrap;
+    }
+
+    .button-div a {
+        margin: 8px;
+        padding: 4px 4px 2px;
+    }
+
+    .button-div a .iconify {
+        font-size: 25px;
+    }
+}
