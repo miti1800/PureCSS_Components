@@ -1,0 +1,24 @@
+a {
+    text-decoration: none;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
+#play_btn #inner-cir, #pause_btn #inner-cir, #stop_btn #inner-cir {
+    transition: 1s linear;
+    stroke-dasharray: 80;
+    stroke-dashoffset: 0;
+}
+
+a:hover #play_btn #inner-cir, a:hover #pause_btn #inner-cir, a:hover #stop_btn #inner-cir {
+    transition: 1s linear;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 430;
+}
+
+a:hover #play_icon, a:hover #pause_rect1, a:hover #pause_rect2, a:hover #stop_icon {
+    fill: #6CB4EE;
+} 
