@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.datetime{
+    position: relative;
+    padding: 10px 0px;
+}
+
+.datetime input {
+    border: none;
+    border-bottom: 2px solid #d4d4d4;
+    margin: 10px;
+    padding: 10px 40px 10px 0px;
+    outline: 0;
+}
+
+.datetime label {
+    left: 10px;
+    bottom: 30px;
+    color: #d4d4d4;
+    transition: 0.3s ease-in-out;
+}
+
+.datetime input:focus~label, .datetime input:valid~label {
+    transform: translateY(-20px);
+    color: #6CB4EE;
+}
+
+.datetime input:focus, .datetime input:valid {
+    border-bottom: 2px solid #6CB4EE;
+}
+
+.datetime input:invalid {
+    outline: 0;
+}
