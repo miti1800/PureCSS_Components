@@ -3,19 +3,20 @@ body {
     justify-content: center;
 }
 
-.input-field{
+.main-div{
     position: relative;
     padding: 10px 0px;
 }
 
-.input-field input {
+.main-div textarea {
     border: none;
     border-bottom: 2px solid #d4d4d4;
+    border-radius: 0;
     margin: 10px;
     padding: 10px 40px 10px 0px;
     outline: 0;
 }
 
-.input-field input:focus, .input-field input:valid {
+.main-div textarea:focus {
     border-bottom: 2px solid #6CB4EE;
 }
