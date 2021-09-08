@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-div {
+    position: relative;
+    padding: 10px 0px;
+}
+
+.main-div textarea {
+    margin-bottom: 0;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 20px;
+    outline: 0;
+}
+
+.main-div label {
+    color: #333;
+    background-color: #fff;
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.main-div textarea:focus ~ label, .main-div.has-value textarea ~ label {
+    transform: translateY(-20px) scale(0.9);
+    padding: 0px 5px;
+    color: #6CB4EE;
+}
+
+.main-div textarea:focus, .main-div.has-value textarea {
+    border: 2px solid #6CB4EE;
+}
