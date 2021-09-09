@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-div{
+    position: relative;
+    padding: 10px 0px;
+}
+
+.main-div textarea {
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    outline: 0;
+}
+
+.main-div textarea:focus {
+    border: 2px solid #6CB4EE;
+}
