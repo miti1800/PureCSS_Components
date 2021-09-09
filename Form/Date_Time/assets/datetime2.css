@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.input-field{
+    position: relative;
+    padding: 10px 0px;
+}
+
+.input-field input {
+    border: none;
+    border-bottom: 2px solid #d4d4d4;
+    margin: 10px;
+    padding: 10px 40px 10px 0px;
+    outline: 0;
+}
+.input-field [type=date]:hover{
+    cursor: pointer;
+}
+.input-field label {
+    position: absolute;
+    left: 10px;
+    bottom: 30px;
+    color: #d4d4d4;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-23px);
+}
+
+.input-field input:focus~label, .input-field input:valid~label {
+    
+    color: #6CB4EE;
+}
+
+.input-field input:focus, .input-field input:valid {
+    border-bottom: 2px solid #6CB4EE;
+}
+
+.input-field input:invalid {
+    outline: 0;
+}
