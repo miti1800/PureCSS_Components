@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.select-field {
+    position: relative;
+    padding: 10px 0px;
+}
+
+.select-field select {
+    border: none;
+    border-bottom: 2px solid #d4d4d4;
+    border-radius: 0px;
+    margin: 10px;
+    padding: 10px 20px 10px 0px;
+    outline: 0;
+}
+
+.select-field select:focus {
+    border-bottom: 2px solid #6CB4EE;
+}
