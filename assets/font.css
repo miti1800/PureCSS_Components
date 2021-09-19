@@ -13,6 +13,10 @@
     font-weight: 700;
 }
 
+.text-uppercase {
+    text-transform: uppercase;
+}
+
 .large-text { font-size: 48px;}
 .h1, h1 { font-size: 32px;}
 .h2, h2 { font-size: 28px;}
