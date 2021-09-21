@@ -34,7 +34,7 @@ body {
 }
 
 .navbar .right-part ul li {
-    padding: 5px 15px;
+    padding: 7px 15px;
 }
 
 .navbar .right-part ul li a {
@@ -82,7 +82,7 @@ body {
     font-size: 26px;
     border-radius: 100%;
     background-color: #fff;
-    padding: 5px;
+    padding: 3px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 
@@ -92,37 +92,33 @@ body {
 
 .navbar .right-part ul.open {
     opacity: 1;
-    width: 100%;
     animation: bottomopen 0.7s ease-in-out;
     z-index: 102;
-    transform: translateY(400px);
 }
 
 @keyframes bottomopen {
     0% {
-        transform: translateY(700px);
+        transform: translateY(220px);
     }
     100% {
-        transform: translateY(400px);
+        transform: translateY(0px);
     }
 }
 
 .navbar .right-part ul.close {
     animation: bottomclose 0.7s ease-in-out;
-    width: 100%;
     z-index: 102;
     opacity: 0;
-    transform: translateY(100px);
 }
 
 @keyframes bottomclose {
     0% {
         opacity: 1;
-        transform: translateY(400px);
+        transform: translateY(0px);
     }
     100% {
         opacity: 1;
-        transform: translateY(700px);
+        transform: translateY(220px);
     }
 }
 
@@ -136,30 +132,34 @@ body {
         position: fixed;
         align-items: center;
         justify-content: flex-start;
-        top: 0px;
+        height: 220px;
+        bottom: 0px;
         right: 0px;
-        padding-top: 80px;
+        padding-top: 40px;
         background-color: #fff;
-        width: 30%;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        width: 100%;
         opacity: 0;
     }
 
     .nav-menu li .close {
-        display: block;
+        display: flex;
         position: absolute;
         top: 20px;
-        left: 75%;
+        left: 92%;
     }
 }
 
 @media(max-width: 600px) {
-    .navbar .right-part ul {
-        width: 45%;
+    .nav-menu li .close
+    {
+      left: 91%;
     }
 }
 
 @media(max-width: 400px) {
-    .navbar .right-part ul {
-        width: 70%;
+    .nav-menu li .close
+    {
+      left: 90%;
     }
 }
