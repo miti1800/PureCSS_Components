@@ -92,34 +92,37 @@ body {
 
 .navbar .right-part ul.open {
     opacity: 1;
+    width: 100%;
     animation: bottomopen 0.7s ease-in-out;
     z-index: 102;
+    transform: translateY(400px);
 }
 
 @keyframes bottomopen {
     0% {
-        transform: translateY(220px);
+        transform: translateY(700px);
     }
     100% {
-        transform: translateY(0px);
+        transform: translateY(400px);
     }
 }
 
 .navbar .right-part ul.close {
     animation: bottomclose 0.7s ease-in-out;
+    width: 100%;
     z-index: 102;
     opacity: 0;
-    transform: translateY(-220px);
+    transform: translateY(100px);
 }
 
 @keyframes bottomclose {
     0% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(400px);
     }
     100% {
         opacity: 1;
-        transform: translateY(220px);
+        transform: translateY(700px);
     }
 }
 
@@ -131,14 +134,12 @@ body {
     .navbar .right-part ul {
         flex-direction: column;
         position: fixed;
-        height: 100vh;
         align-items: center;
         justify-content: flex-start;
         top: 0px;
         right: 0px;
         padding-top: 80px;
         background-color: #fff;
-        box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
         width: 30%;
         opacity: 0;
     }
