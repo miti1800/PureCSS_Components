@@ -132,7 +132,6 @@ body {
         position: fixed;
         align-items: center;
         justify-content: flex-start;
-        height: 220px;
         bottom: 0px;
         right: 0px;
         padding-top: 40px;
@@ -145,7 +144,7 @@ body {
     .nav-menu li .close {
         display: flex;
         position: absolute;
-        top: 20px;
+        top: 13px;
         left: 92%;
     }
 }
