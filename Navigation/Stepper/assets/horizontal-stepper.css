@@ -71,8 +71,25 @@
     display: none;
 }
 
+.step_desc:last-of-type.show {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    animation: showDesc 1s ease-in-out;
+}
+
 .step_desc.show {
     display: block;
+    animation: showDesc 1s ease-in-out;
+}
+
+@keyframes showDesc {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .step_desc h6 {
@@ -83,4 +100,46 @@
     display: flex;
     justify-content: flex-end;
     margin: 0;
+}
+
+@media(max-width: 1400px) {
+    .stepper_div {
+        padding: 30px;
+        border: none;
+        margin: 0;
+    }
+}
+
+@media(max-width: 1000px) {
+    .steps {
+        padding: 0px 80px;
+    }
+}
+
+@media(max-width: 700px) {
+    .steps {
+        padding: 0px 50px;
+    }
+    .stepper_count {
+        margin: 0px 0px 30px;
+    }
+}
+
+@media(max-width: 500px) {
+    .stepper_div {
+        padding: 20px;
+    }
+    .stepper_count {
+        margin: 0px 0px 20px;
+    }
+    .stepper_content {
+        padding-top: 20px;
+    }
+    .steps {
+        padding: 0px 15px;
+    }
+    .normal-btn {
+        margin: 5px;
+        padding: 5px 20px;
+    }
 }
