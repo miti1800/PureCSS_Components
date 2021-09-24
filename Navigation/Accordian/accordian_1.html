@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian-1</title>
+    <link rel="stylesheet" href="../../assets/font.css">
+    <link rel="stylesheet" href="./assets/accordian_1.css">
+</head>
+
+<body>
+    <div class="accordian">
+        <div class="content">
+            <div class="label">Lorem Ipsum</div>
+            <div class="contentx">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptas ab numquam, harum
+                    necessitatibus obcaecati ullam culpa quae unde, asperiores molestias. Labore culpa sunt cupiditate
+                    minus quia accusamus earum explicabo!</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="label">Lorem Ipsum</div>
+            <div class="contentx">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptas ab numquam, harum
+                    necessitatibus obcaecati ullam culpa quae unde, asperiores molestias. Labore culpa sunt cupiditate
+                    minus quia accusamus earum explicabo!</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="label">Lorem Ipsum</div>
+            <div class="contentx">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptas ab numquam, harum
+                    necessitatibus obcaecati ullam culpa quae unde, asperiores molestias. Labore culpa sunt cupiditate
+                    minus quia accusamus earum explicabo!</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="label">Lorem Ipsum</div>
+            <div class="contentx">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptas ab numquam, harum
+                    necessitatibus obcaecati ullam culpa quae unde, asperiores molestias. Labore culpa sunt cupiditate
+                    minus quia accusamus earum explicabo!</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const accordian = document.getElementsByClassName('content');
+        for(i=0;i<accordian.length;i++){
+            accordian[i].addEventListener('click',function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+</html>
