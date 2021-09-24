@@ -13,7 +13,7 @@ body{
 }
 
 .accordian{
-    max-width: 800px;
+    max-width: 600px;
 }
 
 .accordian .content{
@@ -23,7 +23,7 @@ body{
 
 .accordian .content .label{
     position: relative;
-    padding: 10px;
+    padding: 10px 15px;
     background: #6CB4EE;
     color: #fff;
     cursor: pointer;
@@ -53,6 +53,7 @@ body{
 }
 
 .accordian .content.active .contentx{
-    height: 80px;
-    padding: 10px;
+    height: 100px;
+    padding: 10px 15px;
+    margin-top: 10px;
 }
