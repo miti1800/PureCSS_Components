@@ -7,8 +7,9 @@ function openPage(pageName,id) {
   }
 
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
+    tablinks[i].style.borderColor = "";
   }
+
   document.getElementById(pageName).style.display = "block";
   tablinks[0].classList.remove("default");
 }

@@ -11,4 +11,5 @@ function openPage(pageName,id) {
   }
   document.getElementById(pageName).style.display = "block";
   tablinks[0].classList.remove("default");
+  elmnt.style.backgroundColor = "#6CB4EE";
 }
