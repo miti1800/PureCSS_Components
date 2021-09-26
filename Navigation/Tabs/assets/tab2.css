@@ -17,11 +17,13 @@ body {
   width: 100%;
   padding: 15px;
   margin: 50px 20px;
+  border: 1px solid #6CB4EE;
 }
 
 .tablinks {
   display: flex;
   justify-content: space-evenly;
+  border-bottom: 1px solid #6CB4EE;
 }
 
 .tablink {
