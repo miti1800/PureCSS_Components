@@ -31,24 +31,26 @@ body {
   cursor: pointer;
   width: 100%;
   padding: 15px 0px;
+  border-bottom: 2px solid #6CB4EE;
 }
 
 .tablink:hover, .tablink:focus, .tablink.default {
   cursor: pointer;
-  border: 1px solid #6CB4EE;
-  border-bottom: none;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border: 2px solid #6CB4EE;
+  border-bottom: 2px solid #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .tab-contents {
-  border: 1px solid #6CB4EE;
-  border-top-width: 10;
+  border: 2px solid #6CB4EE;
+  border-top: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-
 .tabcontent {
-  margin-top: 30px;
+  padding: 30px;
   display: none;
   text-align: justify;
 }
