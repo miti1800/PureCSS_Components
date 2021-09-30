@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Filter Gallery</title>
+  <link rel="stylesheet" href="../assets/font.css">
+  <link rel="stylesheet" href="./assets/filter-gallery.css">
+</head>
+<body>
+    <div class="filter-gallery">
+        <div id="filter-btn">
+          <button class="h4 btn active" onclick="filterSelection('all')"> All</button>
+          <button class="h4 btn" onclick="filterSelection('mountain')">Mountain</button>
+          <button class="h4 btn" onclick="filterSelection('tree')"> Tree</button>
+          <button class="h4 btn" onclick="filterSelection('ocean')">Ocean</button>
+        </div>
+        
+        <div class="filter-gallery-section">
+          <div class="gallery-image mountain">
+              <img src="./assets/images/Gallery-image2.jpg" alt="Mountain">
+          </div>
+          <div class="gallery-image mountain">
+            <img src="./assets/images/Gallery-image7.jpg" alt="mountain">
+          </div>
+          <div class="gallery-image mountain">
+            <img src="./assets/images/Gallery-image8.jpg" alt="mountain">
+          </div> 
+          <div class="gallery-image tree">
+              <img src="./assets/images/Gallery-image1.jpg" alt="Tree">
+          </div>
+          <div class="gallery-image tree">
+            <img src="./assets/images/Gallery-image6.jpg" alt="Tree">
+          </div>
+          <div class="gallery-image tree">
+            <img src="./assets/images/Gallery-image5.jpg" alt="Tree">
+          </div>
+          <div class="gallery-image ocean">
+            <img src="./assets/images/Gallery-image4.jpg" alt="Ocean">
+          </div>
+          <div class="gallery-image ocean">
+            <img src="./assets/images/Gallery-image3.jpg" alt="Ocean">
+          </div>
+        </div>
+    </div>
+    <script src="./assets/filter-gallery.js"></script>
+</body>
+</html>
