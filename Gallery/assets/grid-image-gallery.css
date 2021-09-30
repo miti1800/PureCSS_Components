@@ -25,3 +25,36 @@ img {
     padding: 10px;
     box-sizing: border-box;
 }
+
+@media(max-width: 1200px) {
+    .grid-gallery {
+        width: 98%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .grid-section-one, .grid-section-two {
+        padding: 10px 5px;
+    }
+    img {
+        padding: 5px 0px;
+    }
+}
+
+@media(max-width: 500px) {
+    .grid-gallery {
+        flex-wrap: wrap;
+        padding: 10px 0px;
+    }
+    .grid-section-one, .grid-section-two {
+        flex: none;
+        width: 60%;
+        padding: 0px 5px;
+    }
+}
+
+@media(max-width: 400px) {
+    .grid-section-one, .grid-section-two {
+        width: 80%;
+    }
+}
