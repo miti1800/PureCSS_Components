@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.tab-gallery-wrapper {
+  padding: 20px;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  width: 25%;
+}
+
+.column img {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.expanded {
+  position: relative;
+  display: none;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 2%;
+  color: white;
+  cursor: pointer;
+}
+
+#expandedImg {
+  width: 100%;
+  height: auto;
+}
