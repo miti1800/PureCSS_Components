@@ -4,23 +4,22 @@
     padding: 0;
   }
 
-body {
-  margin: 15px 30px;
-  align-self: center;
+.tab-gallery-wrapper {
+  padding: 20px;
 }
 
 .column {
   float: left;
   padding: 10px;
   width: 25%;
+}
+
+.column img {
+  cursor: pointer;
   opacity: 0.8;
 }
 
-.responsive {
-  cursor: pointer;
-}
-
-.column:hover {
+.column img:hover {
   opacity: 1;
 }
 
@@ -38,12 +37,12 @@ body {
 .closebtn {
   position: absolute;
   top: 10px;
-  right: 17%;
+  right: 2%;
   color: white;
-  font-weight: bolder;
   cursor: pointer;
 }
 
 #expandedImg {
-  width: 15%;
+  width: 100%;
+  height: auto;
 }

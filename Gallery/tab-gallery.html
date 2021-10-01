@@ -8,25 +8,28 @@
   <link rel="stylesheet" href="./assets/tab-gallery.css">
 </head>
 <body>
-  <div class="row">
-    <div class="column">
-      <img src="assets\images\Gallery-image1.jpg" class="responsive" style="width:100%" onclick="expand(this);">
+  <div class="tab-gallery-wrapper">
+    <div class="row">
+      <div class="column">
+        <img src="assets\images\Gallery-image1.jpg" style="width:100%" onclick="expand(this);">
+      </div>
+      <div class="column">
+        <img src="assets\images\Gallery-image5.jpg" style="width:100%" onclick="expand(this);">
+      </div>
+      <div class="column">
+        <img src="assets\images\Gallery-image6.jpg" style="width:100%" onclick="expand(this);">
+      </div>
+      <div class="column">
+        <img src="assets\images\Gallery-image7.jpg" style="width:100%" onclick="expand(this);">
+      </div>
     </div>
-    <div class="column">
-      <img src="assets\images\Gallery-image5.jpg" class="responsive" style="width:100%" onclick="expand(this);">
-    </div>
-    <div class="column">
-      <img src="assets\images\Gallery-image6.jpg" class="responsive" style="width:100%" onclick="expand(this);">
-    </div>
-    <div class="column">
-      <img src="assets\images\Gallery-image7.jpg" class="responsive" style="width:100%" onclick="expand(this);">
+
+    <div class="expanded">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg">
     </div>
   </div>
 
-  <div class="expanded">
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-    <img id="expandedImg" style="width:100%">
-  </div>
 
   <script src="./assets/tab-gallery.js"></script>
 
