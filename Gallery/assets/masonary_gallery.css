@@ -14,8 +14,12 @@
   display: flex;
   justify-content: space-between;
   width:100%;
+ 
 }
 
+.row img{
+  padding: 4px 4px;
+}
 #row1, #row3{
     max-height: 300px;
     height: 100%;
@@ -30,7 +34,7 @@
   display: flex;
   flex-direction: column;
   width:33.33%;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 #row1 img:first-of-type , #row3 img:last-of-type {
@@ -49,7 +53,7 @@
   width:100% !important;
   max-height: 250px;
   height: 100%;
-  border: 1px solid black;
+  border: 2px white;
 }
 
 
