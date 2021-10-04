@@ -1,61 +1,57 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    display: inline-block;
-  }
-  
-  .row1 {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.masonary-gallery{
+  display:flex;
+  flex-direction: column;
+  padding: 30px;
+}
 
-  .row2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0 4px;
-  }
-  .row3 {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.row {
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+}
 
-  .wide
-  {
-    width:50%;
-    height:25%;
-  }
+#row1, #row3{
+    max-height: 300px;
+    height: 100%;
+}
 
-  .tall
-  {
-    width: 33.33%;
-    height:50%;
-  }
+#row2{
+  max-height: 500px;
+  height:100%;
+}
 
-  .normal
-  {
-    width: 33.33%;
-    height:25%;
-  }
+.column{
+  display: flex;
+  flex-direction: column;
+  width:33.33%;
+  border: 1px solid black;
+}
+
+#row1 img:first-of-type , #row3 img:last-of-type {
+  width:40%;
+}
+#row1 img:last-of-type , #row3 img:first-of-type {
+  width:60%;
+}
+
+#row2 img:first-of-type,#row2 img:last-of-type {
+  width:33.33%;
+
+}
+
+.column img{
+  width:100% !important;
+  max-height: 250px;
+  height: 100%;
+  border: 1px solid black;
+}
+
+
+
+
