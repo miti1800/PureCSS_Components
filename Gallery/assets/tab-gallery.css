@@ -35,23 +35,40 @@
 
 .expanded {
   position: relative;
-  display: none;
+  /* display: none; */
   padding: 10px;
 }
 
 .closebtn {
   position: absolute;
-    top: 20px;
+    top: 25px;
     right: 2%;
     color: white;
     cursor: pointer;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     padding: 3px 10px;
     border-radius: 100%;
-    font-size: 23px;
+    font-size: 21px;
 }
 
 #expandedImg {
   width: 100%;
   height: auto;
+}
+
+@media(max-width: 1000px) {
+  .closebtn {
+    font-size: 15px;
+    top: 25px;
+    padding: 4px 9px;
+    right: 4%;
+  }
+}
+
+@media(max-width: 700px) {
+  .closebtn {
+    font-size: 13px;
+    padding: 3px 7px;
+    right: 4%;
+  }
 }
