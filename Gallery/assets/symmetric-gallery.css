@@ -7,55 +7,63 @@
 
 .row {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+  justify-content: center;
+  padding: 10px 15px;
 }
 
 .column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  overflow: hidden;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column img {
-  margin-top: 5px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.image {
-  max-width: 144px;
-  max-height: 136px;
-}
-
-.one {
-  max-width: 325px;
+.column .one {
   max-height: 400px;
+  padding: 2%;
 }
 
-.two {
-  float: left;
-  margin-right: 35px;
+.sub-section {
+  display: flex;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 600px) {
+.sub-section img {
+  flex: 1;
+  padding: 2%;
+}
+
+@media(max-width: 1300px) {
   .column {
-    flex: 50%;
-    max-width: 50%;
+    width: 25%;
+  }
+}
+@media(max-width: 1100px) {
+  .column .one{
+    max-height: 350px;
+  }
+  .row {
+    flex-wrap: wrap;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media(max-width: 900px) {
   .column {
-    flex: 100%;
-    max-width: 100%;
+    width: 35%;
   }
+  .column .one, .sub-section img {
+    padding: 3%;
+  }
+}
 
+@media(max-width: 700px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media(max-width: 400px) {
+  .column {
+    width: 85%;
+  }
 }
