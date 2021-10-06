@@ -6,6 +6,8 @@
 
 .tab-gallery-wrapper {
   padding: 20px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .row {
@@ -23,7 +25,7 @@
   opacity: 0.8;
 }
 
-.column img:hover {
+.column img:hover, .column.active img {
   opacity: 1;
 }
 
@@ -40,35 +42,63 @@
 }
 
 .closebtn {
-  position: absolute;
+    position: absolute;
     top: 25px;
-    right: 2%;
+    right: 25px;
     color: white;
     cursor: pointer;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     padding: 3px 10px;
     border-radius: 100%;
-    font-size: 21px;
+    font-size: 23px;
 }
 
 #expandedImg {
   width: 100%;
-  height: auto;
+  max-height: 480px;
 }
 
 @media(max-width: 1000px) {
+  .tab-gallery-wrapper {
+    width: 90%;
+  }
   .closebtn {
     font-size: 15px;
-    top: 25px;
     padding: 4px 9px;
-    right: 4%;
   }
 }
 
 @media(max-width: 700px) {
+  .tab-gallery-wrapper {
+    width: 100%;
+  }
+
+  .expanded, .column {
+    padding: 5px;
+  }
+
+  .expanded {
+    padding-top: 0px;
+  }
+
   .closebtn {
-    font-size: 13px;
-    padding: 3px 7px;
-    right: 4%;
+    top: 15px;
+  }
+}
+
+@media(max-width: 500px) {
+  .tab-gallery-wrapper {
+    padding: 15px;
+  }
+  .closebtn {
+    padding: 2px 7px;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+@media(max-width: 400px) {
+  .closebtn {
+    padding: 1px 6px;
   }
 }
