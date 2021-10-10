@@ -6,6 +6,8 @@
 
 .tab-gallery-wrapper {
   padding: 20px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .row {
@@ -23,7 +25,7 @@
   opacity: 0.8;
 }
 
-.column img:hover {
+.column img:hover, .column.active img {
   opacity: 1;
 }
 
@@ -35,14 +37,14 @@
 
 .expanded {
   position: relative;
-  display: none;
+  /* display: none; */
   padding: 10px;
 }
 
 .closebtn {
-  position: absolute;
-    top: 20px;
-    right: 2%;
+    position: absolute;
+    top: 25px;
+    right: 25px;
     color: white;
     cursor: pointer;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -53,5 +55,50 @@
 
 #expandedImg {
   width: 100%;
-  height: auto;
+  max-height: 480px;
+}
+
+@media(max-width: 1000px) {
+  .tab-gallery-wrapper {
+    width: 90%;
+  }
+  .closebtn {
+    font-size: 15px;
+    padding: 4px 9px;
+  }
+}
+
+@media(max-width: 700px) {
+  .tab-gallery-wrapper {
+    width: 100%;
+  }
+
+  .expanded, .column {
+    padding: 5px;
+  }
+
+  .expanded {
+    padding-top: 0px;
+  }
+
+  .closebtn {
+    top: 15px;
+  }
+}
+
+@media(max-width: 500px) {
+  .tab-gallery-wrapper {
+    padding: 15px;
+  }
+  .closebtn {
+    padding: 2px 7px;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+@media(max-width: 400px) {
+  .closebtn {
+    padding: 1px 6px;
+  }
 }

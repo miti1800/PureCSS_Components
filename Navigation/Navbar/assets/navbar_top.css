@@ -20,7 +20,7 @@ body {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
     background-color: #fff;
     width: 100%;
-    z-index: 98;
+    z-index: 100;
 }
 
 .navbar .left-part, .navbar .right-part {
@@ -91,25 +91,24 @@ body {
 }
 
 .navbar .right-part ul.open {
-    opacity: 1;
     animation: topopen 0.7s ease-in-out;
-    z-index: 102;
+    opacity: 1;
 }
 
 @keyframes topopen {
     0% {
-        transform: translateY(-90px);
+        opacity: 0;
+        transform: translateY(-300px);
     }
     100% {
+        opacity: 1;
         transform: translateY(0px);
     }
 }
 
 .navbar .right-part ul.close {
     animation: topclose 0.7s ease-in-out;
-    z-index: 102;
     opacity: 0;
-   
 }
 
 @keyframes topclose {
@@ -118,8 +117,8 @@ body {
         transform: translateY(0px);
     }
     100% {
-        opacity: 1;
-        transform: translateY(-220px);
+        opacity: 0;
+        transform: translateY(-280px);
     }
 }
 

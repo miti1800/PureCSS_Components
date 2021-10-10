@@ -4,29 +4,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../assets/font.css">
+  <link rel="stylesheet" href="../assets/font.css">
   <link rel="stylesheet" href="./assets/tab-gallery.css">
 </head>
 <body>
   <div class="tab-gallery-wrapper">
     <div class="row">
-      <div class="column">
-        <img src="assets\images\Gallery-image1.jpg" style="width:100%" onclick="expand(this);">
+      <div class="column active">
+        <img src="assets\images\Gallery-image1.jpg" style="width: 100%;" id="first-image" onclick="expand(this);">
       </div>
       <div class="column">
-        <img src="assets\images\Gallery-image5.jpg" style="width:100%" onclick="expand(this);">
+        <img src="assets\images\Gallery-image5.jpg" style="width: 100%;" onclick="expand(this);">
       </div>
       <div class="column">
-        <img src="assets\images\Gallery-image6.jpg" style="width:100%" onclick="expand(this);">
+        <img src="assets\images\Gallery-image6.jpg" style="width: 100%;" onclick="expand(this);">
       </div>
       <div class="column">
-        <img src="assets\images\Gallery-image7.jpg" style="width:100%" onclick="expand(this);">
+        <img src="assets\images\Gallery-image7.jpg" style="width: 100%;" onclick="expand(this);">
       </div>
     </div>
 
     <div class="expanded">
       <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-      <img id="expandedImg">
+      <img id="expandedImg" src="assets\images\Gallery-image1.jpg">
     </div>
   </div>
 
