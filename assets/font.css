@@ -17,7 +17,7 @@
     text-transform: uppercase;
 }
 
-.large-text { font-size: 48px;}
+.large-text { font-size: 42px;}
 .h1, h1 { font-size: 32px;}
 .h2, h2 { font-size: 28px;}
 .h3, h3 { font-size: 24px;}
@@ -27,14 +27,14 @@
 .small-text, p { font-size: 14px;}
 
 @media(max-width: 1200px) {
-    .large-text { font-size: 44px;}
+    .large-text { font-size: 36px;}
     .h1, h1 { font-size: 30px;}
     .h2, h2 { font-size: 26px;}
     .h3, h3 { font-size: 22px;}
 }
 
 @media(max-width: 800px) {
-    .large-text { font-size: 40px;}
+    .large-text { font-size: 32px;}
     .h4, h4 { font-size: 18px;}
     .h5, h5 { font-size: 16px;}
     .h6, h6 { font-size: 14px;}
@@ -42,14 +42,14 @@
 }
 
 @media(max-width: 600px) {
-    .large-text { font-size: 36px;}
+    .large-text { font-size: 30px;}
     .h1, h1 { font-size: 28px;}
     .h2, h2 { font-size: 24px;}
     .h3, h3 { font-size: 20px;}
 }
 
 @media(max-width: 400px) {
-    .large-text { font-size: 32px;}
+    .large-text { font-size: 28px;}
     .h1, h1 { font-size: 26px;}
     .h2, h2 { font-size: 22px;}
     .h3, h3 { font-size: 19px;}
