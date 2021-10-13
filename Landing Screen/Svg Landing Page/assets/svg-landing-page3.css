@@ -31,7 +31,7 @@ img {
     background-color: #355E3B;
     border-top-right-radius: 340px;
     border-bottom-right-radius: 340px;
-    padding: 20px 0px;
+    padding: 50px 0px;
     width: 65%;
 }
 
@@ -80,6 +80,7 @@ a {
         border-radius: 0px;
         display: flex;
         justify-content: center;
+        padding: 20px 0px;
     }
 
     .landing-content {
@@ -92,5 +93,11 @@ a {
 
     .landing-content h5 {
         max-width: none;
+    }
+}
+
+@media(max-width: 600px) {
+    .landing-content {
+        padding: 20px;
     }
 }
