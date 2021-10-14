@@ -30,7 +30,11 @@ img {
 
 .landing-image {
     background-color: #355E3B;
-    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(0% 0%, 100% 67%, 66% 100%, 0% 100%);
+        
+    
+
+    
     
 }
 
