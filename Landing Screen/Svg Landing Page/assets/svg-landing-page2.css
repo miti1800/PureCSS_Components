@@ -11,6 +11,11 @@ img {
 
 .navbar {
     box-shadow: none;
+    background: linear-gradient(90deg, #355E3B 54.07%, white 50%);
+}
+
+.navbar .left-part h2 {
+  color: white;
 }
 
 .navbar .right-part ul li a:hover, .navbar .right-part ul li a:focus {
@@ -29,8 +34,6 @@ img {
 
 .landing-image {
     background-color: #355E3B;
-    border-top-right-radius: 340px;
-    border-bottom-right-radius: 340px;
     padding: 50px 0px;
     width: 65%;
 }
