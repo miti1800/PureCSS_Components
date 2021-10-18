@@ -5,7 +5,7 @@
     background-size: cover;
     height: 89vh;
     margin-top: 80px;
-    clip-path: polygon(0 0, 100% 0, 100% 65%, 85% 100%, 0 100%, 0% 50%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 92% 100%, 0 100%);
 }
 
 .landing-content {
@@ -53,8 +53,10 @@ a {
 @media(max-width: 600px) {
     .landing-content {
         padding: 20px;
+        border-radius: 0px;
     }
     .landing-page-container {
         margin-top: 70px;
+        clip-path: none;
     }
 }
