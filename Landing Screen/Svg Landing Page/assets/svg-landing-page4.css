@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 img {
@@ -23,28 +24,24 @@ img {
 
 .landing-page-container {
     display: flex;
-    align-items: center;
-    margin-top: 90px;
-    
+    margin-top: 70px;
+    height: 85vh;
+    background: url('./images/svg4_element.svg');
+    background-repeat: no-repeat;
 } 
 
 .landing-image {
-    background-color: #355E3B;
-    clip-path: polygon(0% 0%, 100% 67%, 66% 100%, 0% 100%);
-        
-    
-
-    
-    
+    padding: 50px;
+    overflow: hidden;
 }
 
 .landing-content {
-    margin: 30px;
-    padding: 20px;
-    width: 50%;
+    padding: 30px;
+    padding-left: 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 50px;
 }
 
 .landing-content h5 {
@@ -67,30 +64,29 @@ a {
 }
 
 @media(max-width: 1200px) {
-    .landing-content {
-        padding: 0;
-    }
-}
-
-@media(max-width: 1000px) {
     .landing-page-container {
+        background: none;
         flex-direction: column;
         align-items: center;
+        height: max-content;
+    }
+
+    .landing-image, .landing-content {
+        width: 100%;
     }
 
     .landing-image {
-        width: 100%;
-        border-radius: 0px;
+        background-color: #355E3B;
         display: flex;
         justify-content: center;
+        padding: 15px;
     }
 
     .landing-content {
+        margin-top: 15px;
         align-items: center;
         text-align: center;
-        width: 100%;
-        padding: 30px;
-        margin: 0;
+        padding: 20px;
     }
 
     .landing-content h5 {
