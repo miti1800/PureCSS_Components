@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    box-shadow: none;
+    background-color: #355E3B;
+    color: white;
+    padding: 11px 0px;
+}
+.navbar .right-part ul li a{
+    color: white;
+}
+.navbar .right-part ul li a:hover, .navbar .right-part ul li a:focus {
+    color: white;
+}
+
+.navbar .right-part ul li a::before {
+    background-color: white;
+}
+
+.right-part .iconify.hamburger{
+    color: white;
+}
+
+.landing-page-container {
+    display: flex;
+    background-color: #355E3B;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 60%, 100% 0%);
+    margin-top: 90px;
+    height: 85vh;
+    position: relative;
+    z-index: 0;
+}
+
+.page-container{
+    position: relative;
+}
+
+.landing-image {  
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    right: 0;
+    height: 500px;
+}
+
+.landing-content {
+    margin: 30px;
+    padding: 20px;
+    width: 50%;
+    justify-content: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.landing-content h5 {
+    margin: 20px 0px;
+    max-width: 500px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.black-btn {
+    padding: 10px 25px;
+    color: black;
+    background-color: white;
+}
+
+.black-btn:hover {
+    background-color: #355E3B;
+}
+
+@media(max-width: 1200px) {
+    .landing-content {
+        padding: 0;
+    }
+}
+
+@media(max-width: 1250px) {
+    .page-container{
+        background-color: #355E3B;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .landing-page-container {
+        height: max-content;
+        clip-path: none;
+    }
+
+    .landing-image {
+        width: 100%;
+        border-radius: 0px;
+        display: flex;
+        height: max-content;
+        justify-content: center;
+        position: relative;
+        padding: 20px 0px;
+    }
+
+    .landing-content {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 30px;
+        margin: 0;
+    }
+
+    .landing-content h5 {
+        max-width: none;
+    }
+}
+
+@media(max-width: 600px) {
+    .landing-content {
+        padding: 20px;
+    }
+}
+
