@@ -1,0 +1,60 @@
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+
+.card2-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+ .card2-wrapper img {
+   max-width: 300px;
+ }
+
+ .card2-wrapper .card2-text {
+   position: absolute;
+   bottom: 21px;
+   max-height: 141px;
+   max-width: 264px;
+ }
+
+ .card2-text .collapsible {
+   border: none;
+   background-color: white;
+   padding: 14px 78px 15px 79px;
+   line-height: 21px;
+   font-weight: bold;
+   font-size: 18px;
+ }
+
+ .content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: white;
+  transition: max-height 0.4s ease-out;
+}
+
+.content .para {
+  max-width: 217px;
+  max-height: 32px;
+}
+
+.content .para p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.content .details {
+  text-decoration: none;
+  color: black;
+  border: 2px solid #000000;
+  max-width: 111px;
+  max-height: 32px;
+  padding: 7px 17px 8px 13px;
+  font-weight: bolder;
+}
