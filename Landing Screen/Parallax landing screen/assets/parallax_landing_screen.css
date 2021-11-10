@@ -46,6 +46,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .black-btn {
@@ -60,6 +61,12 @@ a {
 .black-btn:hover {
     background-color: transparent;
     color: #fff;
+}
+
+@media (max-width: 800px) {
+    .landing-content, .black-btn {
+        border-radius: 0px;
+    }
 }
 
 @media(max-width: 600px) {
