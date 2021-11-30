@@ -4,6 +4,7 @@
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
 .masonary-gallery{
   display:flex;
   flex-direction: column;

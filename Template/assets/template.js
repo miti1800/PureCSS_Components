@@ -22,6 +22,13 @@ function openPage(pageName,id) {
     tablinks[0].classList.remove("default");
 }
 
+const accordian = document.getElementsByClassName('content');
+for(i=0;i<accordian.length;i++){
+    accordian[i].addEventListener('click',function(){
+        this.classList.toggle('active')
+    })
+}
+
 const sc = document.querySelector(".stepper_content").children;
 const scount = document.querySelector(".stepper_count").children;
 var i = 0;
